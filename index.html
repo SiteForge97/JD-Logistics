@@ -6,87 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JD Logistics – Trucking Compliance & Dispatch Platform</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
 </head>
 
 <body>
 
     <!-- HEADER NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">JD Logistics</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dispatch</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Compliance</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Documents</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">JD Logistics</a>
+        <ul class="navbar-nav">
+            <li class="nav-item" id="aboutNavItem"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Compliance</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+        </ul>
     </nav>
 
     <!-- HERO SECTION -->
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-            <!-- Slide 1: Video -->
-            <div class="carousel-item active">
-                <!-- <video autoplay muted loop playsinline class="w-100" style="object-fit: cover; height: 100vh;">
-                    <source src="videos/your-video." type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
-                <div class="hero-slide-image zoom-effect" style="background-image: url('./images/img2.jpg');"></div>
-                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-                    <h1 class="display-4">Welcome to JD Logistics</h1>
-                    <p>Your all-in-one trucking compliance and dispatch management platform.</p>
-                    <a href="#" class="btn-cta">Get Started</a>
-                </div>
+    <div id="heroCarousel" class="custom-carousel">
+        <div class="custom-slide active">
+            <div class="hero-slide-image zoom-effect" style="background-image: url('./images/img2.jpg');"></div>
+            <div class="custom-caption">
+                <h1>Welcome to JD Logistics</h1>
+                <p>Your all-in-one trucking compliance and dispatch management platform.</p>
+                <a href="#" class="btn-cta">Get Started</a>
             </div>
-
-            <!-- Slide 2: Image -->
-            <div class="carousel-item">
-                <div class="hero-slide-image zoom-effect" style="background-image: url('./images/img1.png');"></div>
-                <div class="carousel-caption flex-column h-100">
-                    <h1 class="display-4">Effortless Compliance</h1>
-                    <p>Stay up to date with all regulations effortlessly.</p>
-                    <a href="#" class="btn-cta">Learn More</a>
-                </div>
-            </div>
-
-            <!-- Slide 3: Image -->
-            <div class="carousel-item">
-                <div class="hero-slide-image zoom-effect" style="background-image: url('images/img3.jpg');"></div>
-                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-                    <h1 class="display-4">Streamlined Dispatch</h1>
-                    <p>Manage loads and routes with ease.</p>
-                    <a href="#" class="btn-cta">Explore Features</a>
-                </div>
-            </div>
-
         </div>
-
-        <!-- Carousel Indicators -->
-        <ul class="carousel-indicators">
-            <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
-        </ul>
+        <div class="custom-slide">
+            <div class="hero-slide-image zoom-effect" style="background-image: url('./images/img1.png');"></div>
+            <div class="custom-caption">
+                <h1>Effortless Compliance</h1>
+                <p>Stay up to date with all regulations effortlessly.</p>
+                <a href="#" class="btn-cta">Learn More</a>
+            </div>
+        </div>
+        <div class="custom-slide">
+            <div class="hero-slide-image zoom-effect" style="background-image: url('./images/img3.jpg');"></div>
+            <div class="custom-caption">
+                <h1>Streamlined Dispatch</h1>
+                <p>Manage loads and routes with ease.</p>
+                <a href="#" class="btn-cta">Explore Features</a>
+            </div>
+        </div>
+        <div class="custom-indicators">
+            <span data-slide="0" class="active"></span>
+            <span data-slide="1"></span>
+            <span data-slide="2"></span>
+        </div>
     </div>
 
-    <div style="margin-top: 100px;">
+    <section id="aboutSection" class="about-section">
+        <div class="about-container">
+            <h2>About JD Logistics</h2>
+            <p>
+                JD Logistics is a modern trucking compliance and dispatch platform dedicated to empowering
+                owner-operators and logistics companies. We provide tools to manage regulatory compliance, optimize
+                dispatch operations, and maintain essential documents—all in one place.
+            </p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>To simplify trucking compliance and dispatch management through innovative, user-friendly
+                        software.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>Empowering logistics professionals with technology that drives efficiency and success on the
+                        road.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Why Choose Us</h3>
+                    <p>We combine modern design, powerful features, and responsive support to help you stay compliant
+                        and organized.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-top: 100px;" class="dummy">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nobis, officiis sunt doloremque dolor
             sapiente delectus deleniti doloribus iure illum aut odit, velit ullam accusamus reiciendis dignissimos totam
             aperiam! Veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quasi atque quod
@@ -128,9 +126,7 @@
             amet sequi.</p>
     </div>
 
-    <!-- Optional: More content can go here -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
