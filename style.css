@@ -345,3 +345,82 @@ body {
   font-size: 1em;
   color: #555;
 }
+
+
+/* Footer Styles - Black Background Edition */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-container > div {
+  flex: 1 1 200px;
+}
+
+.footer-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f4a261; /* Accent color */
+}
+
+.footer-container p,
+.footer-container li,
+.footer-container a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-links a:hover {
+  color: #f4a261;
+}
+
+.footer-contact p,
+.footer-about p {
+  margin: 5px 0;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* White icons for dark background */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #aaaaaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  width: 100%;
+}
